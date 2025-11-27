@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>GREENDEN</title>
+</head>
+<body class="bg-gray-50">
+
+<!-- NAVBAR -->
+<nav class="bg-green-200 shadow-md p-4 ">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-green-800">GREENDEN</h1>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 text-gray-700 font-medium">
+      <li><a href="#" class="hover:text-green-600 hover:underline">Home</a></li>
+      <li><a href="#" class="hover:text-green-600">About Us</a></li>
+      <li><a href="#" class="hover:text-green-600 hover:text-bold">Contact Us</a></li>
+    </ul>
+
+    <!-- Hamburger Button -->
+    <button id="menuBtn" class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+           viewBox="0 0 24 24" stroke-width="1.5" 
+           stroke="currentColor" class="w-7 h-7">
+        <path stroke-linecap="round" stroke-linejoin="round" 
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+
+  </div>
+
+
+  <!-- Mobile Menu -->
+  <ul id="mobileMenu" class="hidden flex-col bg-white px-4 pb-4 text-gray-700 font-medium md:hidden">
+    <li class="py-2"><a href="#" class="block hover:text-green-600  hover:underline">Home</a></li>
+    <li class="py-2"><a href="#" class="block hover:text-green-600">About Us</a></li>
+    <li class="py-2"><a href="#" class="block hover:text-green-600">Contact Us</a></li>
+  </ul>
+</nav>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
