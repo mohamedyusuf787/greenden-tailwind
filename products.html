@@ -1,83 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
+
 <body>
     <navbar class="p-4 bg-green-800 flex place-content-between shadow-md sticky top-0 z-10">
         <h1 class=" font-bold text-xl text-white">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-            class="size-1 w-4 h-4 md:hidden text-white">
-            <path fill-rule="evenodd"
-                d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
-                clip-rule="evenodd" />
-        </svg>
+
+        <!-- Hamburger Button -->
+        <button id="menuBtn" class="md:hidden text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-7 h-7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
         <ul class="flex gap-3 hidden md:flex text-white">
             <li><a href="./index.html" class="hover:underline">Home</a></li>
             <li><a href="./products.html" class="hover:underline">Products</a></li>
             <li><a href="./contactus.html" class="hover:underline">contact us</a></li>
         </ul>
     </navbar>
+    <!-- Mobile Menu -->
+    <nav>
+        <ul id="mobileMenu" class=" hidden flex-col bg-white px-4 pb-4 text-gray-700 font-medium md:hidden">
+            <li class="py-2"><a href="./index.html" class="block hover:text-green-600  hover:underline">Home</a></li>
+            <li class="py-2"><a href="./products.html" class="block hover:text-green-600">Products</a></li>
+            <li class="py-2"><a href="./contactus.html" class="block hover:text-green-600">Contact Us</a></li>
+        </ul>
+    </nav>
 
-     <!-- Our best sellers -->
-     <section class="text-center mt-9 p-4">
+    <!-- Our best sellers -->
+    <section class="text-center mt-9 p-4">
         <h1 class="text-3xl font-bold">Our Best Sellers</h1>
         <p>"Plant a Seed, Grow Your Dreams</p>
-        <input type="text" placeholder="Search Products" class="border border-2 border-black rounded-lg p-2 mt-2" style="width: 60%;">
+        <input type="text" placeholder="Search Products" class="border border-2 border-black rounded-lg p-2 mt-2"
+            style="width: 60%;">
 
         <div class="image_cards grid grid-cols-2 gap-3 md:grid-cols-4 mt-8">
             <div class="image_card ">
-                <img src="./images/rosepot-1.jfif" class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
-                <h3 class="font-medium">Rose pot</h3>
-                <p>22$</p>
-            </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-2.jfif" class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
-                <h3 class="font-medium">Rose pot</h3>
-                <p>22$</p>
-            </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-3.jfif" class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
-                <h3 class="font-medium">Rose pot</h3>
-                <p>22$</p>
-            </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-4.jfif" class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+                <img src="./images/rosepot-1.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
                 <h3 class="font-medium">Rose pot</h3>
                 <p>22$</p>
             </div>
             <div class="image_card ">
-                <img src="./images/rosepot-1.jfif" class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+                <img src="./images/rosepot-2.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
                 <h3 class="font-medium">Rose pot</h3>
                 <p>22$</p>
             </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-2.jfif" class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+            <div class="image_card ">
+                <img src="./images/rosepot-3.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
                 <h3 class="font-medium">Rose pot</h3>
                 <p>22$</p>
             </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-3.jfif" class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+            <div class="image_card ">
+                <img src="./images/rosepot-4.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
                 <h3 class="font-medium">Rose pot</h3>
                 <p>22$</p>
             </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-4.jfif" class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+            <div class="image_card ">
+                <img src="./images/rosepot-1.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+                <h3 class="font-medium">Rose pot</h3>
+                <p>22$</p>
+            </div>
+            <div class="image_card ">
+                <img src="./images/rosepot-2.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+                <h3 class="font-medium">Rose pot</h3>
+                <p>22$</p>
+            </div>
+            <div class="image_card ">
+                <img src="./images/rosepot-3.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+                <h3 class="font-medium">Rose pot</h3>
+                <p>22$</p>
+            </div>
+            <div class="image_card ">
+                <img src="./images/rosepot-4.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
                 <h3 class="font-medium">Rose pot</h3>
                 <p>22$</p>
             </div>
         </div>
-     </section>
+    </section>
 
-      <!-- footer -->
-        <footer class="bg-green-200 p-4 flex flex-col gap-2">
-            <h1 class="font-bold text-xl">GREENDEN</h1>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae possimus expedita dignissimos, laudantium recusandae molestiae repellat, exercitationem animi modi soluta, odit nemo reiciendis perferendis non quo! Dolor, officia quam?</P>
-        </footer>
-            <p class="bg-white text-center p-3">&COPY;2025 All copyrights are reserved by GREENDEN</p>
-    
+    <!-- footer -->
+    <footer class="bg-green-200 p-4 flex flex-col gap-2">
+        <h1 class="font-bold text-xl">GREENDEN</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae possimus expedita dignissimos,
+            laudantium recusandae molestiae repellat, exercitationem animi modi soluta, odit nemo reiciendis perferendis
+            non quo! Dolor, officia quam?</P>
+    </footer>
+    <p class="bg-white text-center p-3">&COPY;2025 All copyrights are reserved by GREENDEN</p>
+
 </body>
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+
 </html>

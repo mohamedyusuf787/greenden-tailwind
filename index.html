@@ -13,18 +13,30 @@
 <body>
     <navbar class="p-4 bg-green-800 flex place-content-between shadow-md sticky top-0 z-10">
         <h1 class=" font-bold text-xl text-white">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-            class="size-1 w-4 h-4 md:hidden text-white">
-            <path fill-rule="evenodd"
-                d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
-                clip-rule="evenodd" />
-        </svg>
+        
+         <!-- Hamburger Button -->
+    <button id="menuBtn" class="md:hidden text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+           viewBox="0 0 24 24" stroke-width="1.5" 
+           stroke="currentColor" class="w-7 h-7">
+        <path stroke-linecap="round" stroke-linejoin="round" 
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
         <ul class="flex gap-3 hidden md:flex text-white">
             <li><a href="./index.html" class="hover:underline">Home</a></li>
             <li><a href="./products.html" class="hover:underline">Products</a></li>
             <li><a href="./contactus.html" class="hover:underline">contact us</a></li>
         </ul>
     </navbar>
+    <!-- Mobile Menu -->
+     <nav>
+  <ul id="mobileMenu" class=" hidden flex-col bg-white px-4 pb-4 text-gray-700 font-medium md:hidden">
+    <li class="py-2"><a href="./index.html" class="block hover:text-green-600  hover:underline">Home</a></li>
+    <li class="py-2"><a href="./products.html" class="block hover:text-green-600">Products</a></li>
+    <li class="py-2"><a href="./contactus.html" class="block hover:text-green-600">Contact Us</a></li>
+  </ul>
+</nav>
 
     <!-- landing page -->
     <section class="p-4 flex justify-center items-center gap-3  bg-green-200">
@@ -165,5 +177,13 @@
     <p class="bg-white text-center p-3">&COPY;2025 All copyrights are reserved by GREENDEN</p>
 
 </body>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
 
 </html>
