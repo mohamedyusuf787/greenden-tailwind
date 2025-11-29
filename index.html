@@ -11,19 +11,18 @@
 </head>
 
 <body>
-    <navbar class="p-4 bg-green-200 flex place-content-between shadow-md sticky top-0 z-10">
-        <h1 class=" font-bold text-xl">GREENDEN</h1>
+    <navbar class="p-4 bg-green-800 flex place-content-between shadow-md sticky top-0 z-10">
+        <h1 class=" font-bold text-xl text-white">GREENDEN</h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-            class="size-1 w-4 h-4 sm:hidden">
+            class="size-1 w-4 h-4 md:hidden text-white">
             <path fill-rule="evenodd"
                 d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
                 clip-rule="evenodd" />
         </svg>
-       <ul class="flex gap-3 hidden md:flex">
+        <ul class="flex gap-3 hidden md:flex text-white">
             <li><a href="./index.html" class="hover:underline">Home</a></li>
-            <li><a href=""class="hover:underline">about us</a></li>
-            <li><a href="./products.html"class="hover:underline">Products</a></li>
-            <li><a href="./contactus.html"class="hover:underline">contact us</a></li>
+            <li><a href="./products.html" class="hover:underline">Products</a></li>
+            <li><a href="./contactus.html" class="hover:underline">contact us</a></li>
         </ul>
     </navbar>
 
@@ -32,10 +31,10 @@
         <div class="landing_page__content">
             <h1 class="text-4xl font-bold">Plants for your interior</h1>
             <p>We offer a beautiful and fabulous plants</p>
-           
+
             <div class="landing_page__btns flex gap-2 mt-2">
-            <button class="bg-black rounded text-white p-2">Shop now</button>
-            <button class="border-2 border-black rounded p-2">Watch video</button>
+                <button class="bg-green-800 rounded text-white p-2"><a href="./products.html">Shop now</a></button>
+                <button class="border-2 border-green-800 rounded p-2">Watch video</button>
             </div>
             <p class="font-medium text-gray-700 py-2">1.3 million Customer | 20+ Country</p>
 
@@ -45,11 +44,11 @@
 
     <!-- about us section -->
     <section class="text-center mt-9 p-4">
-        <h1 class="font-bold text-3xl">About us</h1>
+        <h1 class="font-bold text-3xl ">About us</h1>
         <p>This site for those who admire the beauty and harmony of nature.</p>
         <div class="about_cards p-4 m-4  md:flex md:gap-5">
 
-            <div class="about_card border border-black p-2 mt-2 ">
+            <div class="about_card border border-black p-2 mt-2 rounded-lg ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-12 h-12 inline">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -61,7 +60,7 @@
                     natus reiciendis eligendi alias sed. Saepe impedit quos sed repellendus dolorum deleniti eligendi
                     laborum dignissimos eius.</p>
             </div>
-            <div class="about_card border border-black  p-2 mt-2">
+            <div class="about_card border border-black  p-2 mt-2 rounded-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-12 h-12 inline">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -73,7 +72,7 @@
                     natus reiciendis eligendi alias sed. Saepe impedit quos sed repellendus dolorum deleniti eligendi
                     laborum dignissimos eius.</p>
             </div>
-            <div class="about_card border border-black  p-2 mt-2">
+            <div class="about_card border border-black  p-2 mt-2 rounded-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-12 h-12 inline">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -84,67 +83,86 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis qui quam tempora numquam aliquam
                     natus reiciendis eligendi alias sed. Saepe impedit quos sed repellendus dolorum deleniti eligendi
                     laborum dignissimos eius.</p>
-        </div>
+            </div>
     </section>
 
     <!-- Our best sellers -->
-     <section class="text-center mt-9 p-4">
+    <section class="text-center mt-9 p-4">
         <h1 class="text-3xl font-bold">Our Best Sellers</h1>
         <div class="image_cards grid grid-cols-2 gap-3 md:grid-cols-4 mt-4">
             <div class="image_card ">
-                <img src="./images/rosepot-1.jfif" class="inline hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+                <img src="./images/rosepot-1.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
                 <h3 class="font-medium">Rose pot</h3>
                 <p>22$</p>
             </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-2.jfif" class="inline hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+            <div class="image_card ">
+                <img src="./images/rosepot-2.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
                 <h3 class="font-medium">Rose pot</h3>
                 <p>22$</p>
             </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-3.jfif" class="inline hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
-                <h3 class="font-medium">Rose pot</h3>
-                <p>22$</p>
-            </div>
-             <div class="image_card ">
-                <img src="./images/rosepot-4.jfif" class="inline hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+            <div class="image_card">
+                <img src="./images/rosepot-3.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
+                <div class="card_content ">
+                    <h3 class="font-medium">Rose pot</h3>
+                    <p>22$</p>
+                </div>
+
+                </div>
+            <div class="image_card ">
+                <img src="./images/rosepot-4.jfif"
+                    class="inline rounded-lg hover:shadow-xl transform hover:-translate-y-2 transition ease-out">
                 <h3 class="font-medium">Rose pot</h3>
                 <p>22$</p>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- customer reviews -->
-      <section class="text-center mt-9">
+    <!-- customer reviews -->
+    <section class="text-center mt-9">
         <h1 class="font-bold text-3xl">Customer Reviews</h1>
-        <div class="review bg-green-800 p-2 m-4 flex flex-col gap-2">
-            <p class="text-white text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi repellendus id deserunt voluptatem velit, quod repellat delectus ipsam nam placeat perspiciatis. Ducimus neque mollitia perspiciatis doloribus placeat consequatur? Ut.</p>
+        <div class="review bg-green-800 p-2 m-4 rounded-lg flex flex-col gap-2">
+            <p class="text-white text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi
+                repellendus id deserunt voluptatem velit, quod repellat delectus ipsam nam placeat perspiciatis. Ducimus
+                neque mollitia perspiciatis doloribus placeat consequatur? Ut.</p>
             <p class="font-medium text-yellow-500 text-left">Mohamed Yusuf</p>
+            <p class="font-thin text-white text-left -mt-3">Founder of YDS ptd</p>
         </div>
-         <div class="review bg-green-800 p-2 m-4 flex flex-col gap-2">
-            <p class="text-white text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi repellendus id deserunt voluptatem velit, quod repellat delectus ipsam nam placeat perspiciatis. Ducimus neque mollitia perspiciatis doloribus placeat consequatur? Ut.</p>
+        <div class="review bg-green-800 p-2 m-4 rounded-lg  flex flex-col gap-2">
+            <p class="text-white text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi
+                repellendus id deserunt voluptatem velit, quod repellat delectus ipsam nam placeat perspiciatis. Ducimus
+                neque mollitia perspiciatis doloribus placeat consequatur? Ut.</p>
             <p class="font-medium text-yellow-500 text-left">Jim</p>
+            <p class="font-thin text-white text-left -mt-3">CEO of OXY</p>
         </div>
-         <div class="review bg-green-800 p-2 m-4 flex flex-col gap-2">
-            <p class="text-white text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi repellendus id deserunt voluptatem velit, quod repellat delectus ipsam nam placeat perspiciatis. Ducimus neque mollitia perspiciatis doloribus placeat consequatur? Ut.</p>
+        <div class="review bg-green-800 p-2 m-4 rounded-lg  flex flex-col gap-2">
+            <p class="text-white text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi
+                repellendus id deserunt voluptatem velit, quod repellat delectus ipsam nam placeat perspiciatis. Ducimus
+                neque mollitia perspiciatis doloribus placeat consequatur? Ut.</p>
             <p class="font-medium text-yellow-500 text-left">Genny Methew</p>
+            <p class="font-thin text-white text-left -mt-3">CEO of XYZ</p>
         </div>
-      </section>
+    </section>
 
-      <!-- join our newsletter -->
-       <section class="text-center flex flex-col items-center mt-9 p-4">
+    <!-- join our newsletter -->
+    <section class="text-center flex flex-col items-center mt-9 p-4">
         <h1 class="font-bold text-3xl">Join Our Newsletter</h1>
         <p>Signup for our email newspaper to get exclusive discounts, updates, and more.</p>
-        <input type="text" class=" w-lg border border-2 border-black p-2 mt-2" style="width: 70%;" placeholder="Enter your mail ID">
-        <button class="bg-black text-white underline p-3 w-24 mt-2">Subscribe</button>
-       </section>
+        <input type="text" class=" w-lg border border-2 border-black rounded-lg p-2 mt-2" style="width: 70%;"
+            placeholder="Enter your mail ID">
+        <button class="bg-green-800 text-white underline p-3 w-24 mt-2 rounded">Subscribe</button>
+    </section>
 
-       <!-- footer -->
-        <footer class="bg-green-200 p-4 flex flex-col gap-2">
-            <h1 class="font-bold text-xl">GREENDEN</h1>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae possimus expedita dignissimos, laudantium recusandae molestiae repellat, exercitationem animi modi soluta, odit nemo reiciendis perferendis non quo! Dolor, officia quam?</P>
-        </footer>
-            <p class="bg-white text-center p-3">&COPY;2025 All copyrights are reserved by GREENDEN</p>
+    <!-- footer -->
+    <footer class="bg-green-200 p-4 flex flex-col gap-2">
+        <h1 class="font-bold text-xl">GREENDEN</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae possimus expedita dignissimos,
+            laudantium recusandae molestiae repellat, exercitationem animi modi soluta, odit nemo reiciendis perferendis
+            non quo! Dolor, officia quam?</P>
+    </footer>
+    <p class="bg-white text-center p-3">&COPY;2025 All copyrights are reserved by GREENDEN</p>
 
 </body>
 
